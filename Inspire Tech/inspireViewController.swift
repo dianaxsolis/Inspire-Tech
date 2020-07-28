@@ -9,14 +9,40 @@
 import UIKit
 
 class inspireViewController: UIViewController {
-
+    
+    @IBOutlet weak var inspireLabel: UILabel!
+    
+    @IBOutlet weak var inspireImg1: UIImageView!
+    @IBOutlet weak var inspireLink1: UILabel!
+    @IBOutlet weak var inspireText1: UILabel!
+    
+    @IBOutlet weak var inspireImg2: UIImageView!
+//    @IBOutlet weak var inspireLink2: UILabel!
+    @IBOutlet weak var inspireText2: UILabel!
+    
+    @IBOutlet weak var inspireImg3: UIImageView!
+    @IBOutlet weak var inspireLink3: UILabel!
+    @IBOutlet weak var inspireText3: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func inspireButtonLink2(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.lifehack.org/378548/100-inspirational-quotes-for-girls-on-strength-and-confidence")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func inspireButtonLink1(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.ted.com/talks/reshma_saujani_teach_girls_bravery_not_perfection/up-next#t-10930")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func inspireButtonLink3(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.youtube.com/watch?v=cRb5iel-3Ck")! as URL, options: [:], completionHandler: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
