@@ -9,14 +9,22 @@
 import UIKit
 
 class futureViewController: UIViewController {
-
+    @IBOutlet weak var LABELFUTURE: UILabel!
+    @IBOutlet weak var LABELINFO: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func ELEMENTARY(_ sender: Any) {
+    }
+    @IBAction func MIDDLE(_ sender: Any) {
+    }
     
-
+    @IBAction func HIGHSCHOO(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
